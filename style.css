@@ -1,0 +1,249 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: black;
+    height:650;
+    text-align: center;
+    align-items: center;
+}
+
+header{
+    height: 650;
+    width: 1300;
+}
+.homeimg{
+    object-fit: cover;
+    opacity: 0.4;
+    margin-top: 5%;
+ }
+.navbar{
+    background-color:#4d4660;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height:100px;
+    margin-left: auto;
+    margin-right: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    top: 0;
+    opacity: 0.7;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+
+}
+ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 30px;
+    font-size: 19px;
+    margin-top:5%;
+}
+.contact-icon{
+    padding:0;
+    margin: 0 !important;
+    margin-bottom: 2%;
+}
+a{
+    color: wheat;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    color: #000;
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 2px;
+}
+.name{
+    display: flex;
+    color:wheat;
+    flex-direction: column;
+    margin-right: 52%;
+    font-size: 24px;
+    list-style: none;
+    padding:2px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.name:hover{
+    font-style: italic;
+}
+span>li:nth-child(1){
+    margin-left:3%;
+    display: flex;
+    color: wheat;
+}
+span>:nth-child(2){
+    margin-left:10%;
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+}
+
+
+.image{
+    position: relative;
+    align-items: center;
+}
+
+.heading{
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1; 
+   color:wheat;
+   font-family: "Poppins", sans-serif;
+}
+/* Add this CSS for the circular arrow button */
+.scroll-down-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000; /* Black background */
+    color: #fff; /* White arrow color */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-down-btn:hover {
+    background-color: #333; /* Adjust hover background color */
+}
+
+/* Add this CSS to rotate the arrow on hover */
+.scroll-down-btn:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.icon1{
+    display: flex;
+    margin-top:5%;
+    justify-content:center;
+    list-style: none;
+    padding:10px;
+    gap: 150px;
+}
+
+div li{
+    padding:20px ;
+    margin: 0%;
+}
+#skillhead{
+    font-family: "Poppins", sans-serif;
+    color: wheat;
+    margin-top: 6%;
+    
+}
+.swipeleft{
+    left:50%
+}
+.icons>:nth-child(2){
+    margin-left: 0;
+}
+.webdicon{
+    display: flex;
+    gap:2px;
+    
+}
+.icon2{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    border: 2px dashed rgb(159, 164, 164);
+    margin-left: 32%;
+    margin-right:0;
+}
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --white-color: #fff;
+    --black-color: hsl(210, 12%, 15%);
+    --body-color: hsl(210, 16%, 12%);
+    --container-color: hsl(210, 24%, 8%);
+  }
+.aboutmepage{
+    display:flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    --hue-1:285;
+    --hue-2:265;
+    padding:280px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top:80px;
+    margin-left:300px;
+    margin-right:300px;
+    border:4px solid transparent;
+    background:linear-gradient(var(--container-color), var(--container-color)) padding-box, linear-gradient(140deg, hsl(var(--hue-1), 70%, 60%) 0%, var(--container-color), var(--container-color), hsl(var(--hue-2), 70%, 55%) 100%) border-box; 
+
+}
+.class_scale-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background: linear-gradient(140deg, hsl(var(--hue-1), 70%, 50%) 3%, hsl(var(--hue-2), 95%, 45%) 100%);
+    border-radius: 1rem;
+    border:2px solid black;
+    top: 1rem;
+    font-size:xx-large;
+    /* position: absolute; */
+    bottom: 20px; 
+}
+/* .resume-btn {
+    margin-top:5px;
+    background-color: yellow;
+    padding:20px;
+    font-weight:600;
+    font-size: 19px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    
+} */
+
+.class_scale-2{
+    background: var(--container-color);
+}
+.card__scale-1, .card__scale-2 {
+    position: absolute;
+    filter: blur(24px);
+    transition: transform 0.3s ease-in;
+  }
+.aboutmepage:hover.card__scale-1{
+    transform:scale(6);
+}
+.aboutmepage:hover .card__scale-2 {
+    transform: scale(6);
+    transition-delay: 0.1s;
+  }
+  
+.aboutme{
+    color: antiquewhite;
+    /* display: flex;
+    flex-direction: column; */
+    margin-right: 20%;
+    margin-left:20%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 5px;
+}
